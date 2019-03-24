@@ -1,0 +1,29 @@
+.sign-in {
+}
+
+.sign-in__title {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  font-size: 28px;
+  line-height: 45px;
+  font-weight: 400;
+}
+
+.sign-in__sign-up-text {
+  font-size: 14px;
+  line-height: 18px;
+  color: #707070;
+}
+
+.sign-in__sign-up-text:hover {
+  color: #303030;
+}
+
+.sign-in__sign-up-text--link {
+  color: #4384fd;
+  cursor: pointer;
+}
+
+.sign-in__sign-up-text--link:hover {
+}
