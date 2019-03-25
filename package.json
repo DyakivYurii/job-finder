@@ -15,7 +15,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -26,5 +27,22 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "jest": "^24.5.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "*.js",
+      "*.tsx"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 50,
+        "branches": 50,
+        "functions": 50,
+        "lines": 100
+      }
+    }
+  }
 }
